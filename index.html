@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 style="color: rgb(23, 9, 104); text-shadow :2px 2px rgb(63, 128, 189); text-align: center;">COUNTRY INFORMATION</h2>
+        <div class="row mt-5">
+
+            <div class="col-4">
+                <h5>Type a country name to fetch details :</h5>
+                
+                    <input type="text" class="form-control my-3 mx-5" id="cntry" placeholder="Enter Country name"
+                        style="width: 300px; border: 2px solid rgb(31, 18, 82);
+                        border-radius: 4px;">
+                    <button class="btn btn-primary ml-5 " onclick="fetchCountry()" id="btn" style=" margin-left: 120px; width: 140px; height: 40px;">Fetch Data</button>
+            </div>
+            <div class="col-4" ></div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-3"></div>
+            <div class="col-6" id="result">
+
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
